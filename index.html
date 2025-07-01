@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linnéa Erkas - informationsdesigner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="text-gray-800 josefin-sans-400">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-yellow-100 shadow z-50">
+      <div
+        class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Namn / logotyp -->
+        <div class="text-2xl font-bold tracking-wide">
+          <a href="#home">LINNÉA ERKAS</a>
+        </div>
+
+        <!-- Hamburgerknapp -->
+        <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none">
+          &#9776;
+        </button>
+
+        <!-- Meny för desktop -->
+        <ul class="hidden md:flex gap-6 text-lg font-medium">
+          <li><a href="#about" class="hover:underline">Om mig</a></li>
+          <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+          <li><a href="#contact" class="hover:underline">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobilmeny -->
+      <ul
+        id="mobile-menu"
+        class="hidden md:hidden flex-col text-center text-lg font-medium bg-yellow-100 border-t border-gray-200 py-4 space-y-4"
+      >
+        <li><a href="#about" class="hover:underline menu-link">Om mig</a></li>
+        <li>
+          <a href="#portfolio" class="hover:underline menu-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:underline menu-link">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hem -->
+    <section
+      id="home"
+      class="relative h-screen bg-center bg-cover bg-no-repeat text-gray-800 flex items-center justify-center px-6"
+      style="background-image: url('/img/bg_flower2.png')"
+    >
+      <div class="text-center p-8 rounded">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+          Hej det är Linnéa!
+        </h1>
+        <p class="text-xl text-gray-800 drop-shadow-lg">
+          Välkommen till min portfolio inom webbdesign, visualisering och
+          digital form.
+        </p>
+      </div>
+
+      <!-- Våg som avslutar Hem-sektionen -->
+      <div class="absolute bottom-0 left-0 w-full rotate-180">
+        <svg
+          viewBox="0 0 1440 150"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-full"
+        >
+          <path
+            fill="oklch(97.3% 0.071 103.193)"
+            d="M0,96 C120,80, 240,40, 360,80 C480,120, 600,160, 720,120 C840,80, 960,40, 1080,80 C1200,120, 1320,160, 1440,120 L1440,0 L0,0 Z"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Om mig -->
+
+    <section id="about" class="bg-yellow-100">
+      <div class="px-4 py-16 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <!-- Textkolumn -->
+          <div>
+            <h2 class="text-3xl font-bold mb-6">Hej på mig</h2>
+            <p class="mb-4 text-gray-800">
+              Jag är en nyfiken och kreativ designer med ett stort intresse för
+              visuell kommunikation, typografi och användarupplevelser. Med en
+              examen inom informationsdesign har jag en bred kunskap inom både
+              trycksaksproduktion och webbdesign. Jag är van att jongelera många
+              olika projekt och jag trivs bäst när jag får kombinera kreativt
+              tänkande med strukturerad problemlösning.
+            </p>
+            <p class="mb-4 text-gray-800">
+              Jag har en katt som heter Frasse, 26 dahlior i min trädgård och ett personligt bästa i bänkpress på 50kg.
+            </p>
+            <p class="text-gray-800"></p>
+          </div>
+
+          <!-- Bildkolumn -->
+          <div>
+            <img
+              src="/img/IMG_5766_2.jpg"
+              alt="Porträtt av mig"
+              class="w-3/4 mx-auto h-auto rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Våg-->
+    <div class="-mt-1 rotate-180">
+      <svg
+        class="bg-yellow-100"
+        viewBox="0 0 1440 150"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="oklch(95.1% 0.026 236.824)"
+          d="M0,96L48,85.3C96,75,192,53,288,58.7C384,64,480,96,576,112C672,128,768,128,864,128C960,128,1056,128,1152,122.7C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        />
+      </svg>
+    </div>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-16 bg-sky-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12">Webbdesign</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <a
+            href="projekt1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative group overflow-hidden rounded-lg bg-white shadow-lg block"
+          >
+            <img
+              src="/img/valmojligheter-02.png"
+              alt="Projekt 1"
+              class="w-full h-64 object-contain transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center px-4"
+            >
+              <h3 class="text-xl font-semibold mb-2">Kvinna 30</h3>
+              <p class="text-sm">
+                Ett informationsdesignprojekt där jag visualiserade livsval och
+                prioriteringar. Fokus låg på att skapa tydlig och engagerande
+                grafik för en fiktiv målgrupp. Projektet följer WCAG:s
+                riktlinjer.
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 2 -->
+          <a
+            href="projekt1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative group overflow-hidden rounded-lg bg-white shadow-lg block"
+          >
+            <img
+              src="/img/torsken_laptop.PNG"
+              alt="Projekt 2"
+              class="w-full h-64 object-cover transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center px-4"
+            >
+              <h3 class="text-xl font-semibold mb-2">
+                Torsken - snart borta från Östersjön
+              </h3>
+              <p class="text-sm">
+                Ett visualiseringsprojekt om torsken i Östersjön. Innehåller
+                flera typer av datavisualiseringar, interaktiva element samt
+                SVG-animationer.
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a
+            href="projekt1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative group overflow-hidden rounded-lg bg-white shadow-lg block"
+          >
+            <img
+              src="/img/skogsbrand_band.PNG"
+              alt="Projekt 3"
+              class="w-full h-64 object-cover transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center px-4"
+            >
+              <h3 class="text-xl font-semibold mb-2">Skogsbrand</h3>
+              <p class="text-sm">
+                Projekt där jag projektledde en grupp om sex personer. Uppgiften
+                gick ut på att ta fram en visuell identitet, webbplats samt
+                trycksaker till ett fiktiv nöjesfält.
+              </p>
+            </div>
+          </a>
+        </div>
+        <h2 class="text-3xl font-bold my-12">Grafisk design</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <a
+            href="projekt1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative group overflow-hidden rounded-lg bg-white shadow-lg block"
+          >
+            <img
+              src=""
+              alt=""
+              class="w-full h-64 object-cover transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center px-4"
+            >
+              <h3 class="text-xl font-semibold mb-2">Under konstruktion</h3>
+              <p class="text-sm">Mer innehåll kommer snart</p>
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a
+            href="projekt1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative group overflow-hidden rounded-lg bg-white shadow-lg block"
+          >
+            <img
+              src=""
+              alt=""
+              class="w-full h-64 object-cover transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center px-4"
+            >
+              <h3 class="text-xl font-semibold mb-2">Under konstruktion</h3>
+              <p class="text-sm">Mer innehåll kommer snart</p>
+            </div>
+          </a>
+          <!-- Card 3 -->
+          <a
+            href="projekt1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative group overflow-hidden rounded-lg bg-white shadow-lg block"
+          >
+            <img
+              src=""
+              alt=""
+              class="w-full h-64 object-cover transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center px-4"
+            >
+              <h3 class="text-xl font-semibold mb-2">Under konstruktion</h3>
+              <p class="text-sm">Mer innehåll kommer snart</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Våg-->
+    <div class="-mb-1 bg-yellow-100">
+      <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill="oklch(95.1% 0.026 236.824)"
+          d="M0,60 C360,120 1080,0 1440,60 L1440,0 L0,0 Z"
+        />
+      </svg>
+    </div>
+
+    <!-- Kontakt -->
+    <section id="contact" class="bg-yellow-100 pt-20 pb-24 px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4">Kontakt</h2>
+        <p class="text-lg text-gray-700 mb-8">
+          Jag är öppen för nya möjligheter, samarbeten eller bara ett kreativt
+          samtal. <br />Vi kan väl höras av?
+        </p>
+
+        <!-- Ikoner -->
+        <div class="flex justify-center gap-12">
+          <!-- E-post -->
+          <a
+            href="mailto:linneaerkas@gmail.com"
+            target="_blank"
+            class="transition-transform transform hover:scale-110"
+          >
+            <img src="/img/mail-icon.svg" alt="E-posta mig" class="w-16 h-16" />
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="www.linkedin.com/in/linnéa-erkas-1611372a1"
+            target="_blank"
+            class="transition-transform transform hover:scale-110"
+          >
+            <img
+              src="/img/InBug-Black.png"
+              alt="LinkedIn-profil"
+              class="w-16"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-600 text-white py-8">
+      <div class="max-w-4xl mx-auto text-center space-y-4">
+        <p class="text-sm">© 2025 Linnéa Erkas</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
